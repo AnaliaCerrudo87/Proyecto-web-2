@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+
+ body{
+
+    font-family: 'BigNoodleTitling';
+    
+ }
+
+ .contenedor{
+     padding: 60px 0;
+     width: 90%;
+     max-width: 1000%;
+     margin: auto;
+     overflow: hidden;
+ }
+
+.titulo{
+
+    color: #0d2153;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header{
+
+    width: 100%;
+    height: 600px;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(193, 74%, 49%, 0.726), hsla(240, 100%, 14%, 0.747)),url(../img/portada.jpg);
+    background: linear-gradient(to right, hsla(193, 74%, 49%, 0.726), hsla(240, 100%, 14%, 0.747)),url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+nav{
+
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+    
+}
+
+header .textos-header{
+
+    display: flex;
+    height:460px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff
+}
+
+.textos-header h2{
+
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+
+.imagen{
+
+    width: 48%;
+}
+.contenedor-imagen{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre-nosotros .contenedor-texto{
+
+    width: 48%;
+}
+
+
+.contenedor-texto h3{
+
+    margin-bottom: 15px;
+}
+
+.contenedor-texto h3 span{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.contenedor-texto p{
+
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+.sevicios{
+
+    background: #f2f2f2;
+}
+
+.galeria-servicios{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-servicios{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-servicios > img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.icono-galeria{
+
+    position: absolute;
+    width:100% ;
+    height: 100%;
+    top:0;
+    transform: scale(0);
+    background: hsla(193, 74%, 49%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icono-galeria img{
+
+width: 50px;
+
+}
+
+.icono-galeria p{
+    color:#fff;
+}
+
+.imagen-servicios:hover .icono-galeria{
+
+    transform: scale(1);
+}
+
+footer{
+    background: #0d2153 ;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+footer h1{
+    font-family: 'BigNoodleTitling';
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contenedor-footer{
+
+    display: flex;
+    width: 90%;
+    justify-content:space-evenly;
+   
+    margin: auto;
+    page-break-after: 50px;
+    border-bottom: 1px solid #f2f2f2 ;
+   
+}
+
+.contenedor-footer2{
+        text-align:center;
+
+}
+
+.contenedor-footer2 h4{
+    color: #fff;
+    border-bottom: 3px solid #0d2153;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.contenedor-footer2 p{
+    color: #fff;
+    
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #f2f2f2;
+}
+
+/*body {
+	font-size:80%;
+}
+
+/* porcentaje base, solo en el body 
+p {
+	font-size:0.9em;
+}
+h1 {
+	font-size:2em;
+}
+h2 {
+	font-size:1.4em;
+}
+#pie {
+	font-size:1.2em;
+}
+.epigrafes {
+	font-size:1.1em;
+}
+
+/* fin de zona común a todas las resoluciones 
+@media screen and (min-width:800px) {
+	body {
+		font-size:100%;
+		/* ampliamos los textos si mide más de 800px */
+	}
+}
+
+/* fin de la zona para más de 800px de ancho de pantalla 
+@media screen and (min-width:1200px) {
+	body {
+		font-size:120%;
+		/* ampliamos más aún los textos si mide más de 1200px */
+	}
+}
+
+/* fin de la zona para más de 1200px de ancho de pantalla */
